@@ -1,4 +1,4 @@
-<%- include("header") -%>
+<%- include('header.ejs') %>
 
 <div class="box" id="heading">
     <h1><%= listTitle %></h1>
@@ -19,10 +19,10 @@
             placeholder="New Item"
             autocomplete="off"
         />
-        <button type="submit" name="list" value="<%" ="listTitle" %>
+        <button type="submit" name="list" value=<%= listTitle %>
             class="btn btn-primary"> +
         </button>
     </form>
 </div>
 
-<%- include("footer") -%>
+<%- include('footer.ejs') %>
